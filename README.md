@@ -1,5 +1,7 @@
 # SaaS Customer Churn & Retention – Analytics Case Study
 
+[🔗 View Dashboard (Looker Studio)] https://lookerstudio.google.com/reporting/3680a8a5-9493-4e74-8a44-348ec08b26e8
+
 ## Files in This Repo
 
 - `sql/` – Core SQL scripts for table and view creation.
@@ -11,8 +13,9 @@
 
 ## 1. Business Context
 
-A subscription-based SaaS product is experiencing high customer churn and plateauing growth. 
-Leadership wants to understand:
+A subscription-based SaaS business experiencing higher than expected customer churn. This project analyzes churn, retention and lifetime value using BigQuery & Looker Studio, and delivers actionable insights to reduce revenue loss.
+
+This helps leadership understand:
 
 - How bad is churn today (in customers and revenue)?
 - Which plans and segments drive most churn?
@@ -32,7 +35,40 @@ This project simulates a realistic SaaS environment using synthetic data and dem
 
 ---
 
-## 3. Data & Tools
+## 3. Key Metrics
+
+- **30-day Churn Rate:** ~25%
+- **Active Customer Base:** ~4K
+- **Monthly Recurring Revenue (MRR):** ~$126K
+- **Revenue Lost to Churn (Monthly):** ~$33K
+- **Estimated Annual Revenue at Risk:** ~$400K
+
+---
+
+## 4. Dashboards
+
+### 4.1 Executive Summary (Page 1)
+
+**Shows:**
+
+- Churn Rate (30d), Active Customers, MRR, Revenue Lost to Churn
+- Churn Rate by Plan & Churn Volume by Plan
+- Active vs Churned Customers over time (by signup quarter)
+- Key insights on where churn concentrates and financial impact
+
+### 4.2 Customer Journey & Retention (Page 2)
+
+**Shows:**
+
+- Cohort retention heatmap (Signup Cohort vs Months After Signup)
+- User Journey Funnel (Signed Up → Tried → Activated → Engaged → Churned)
+- Churn Rate by Login Frequency
+- Lifecycle insights and recommended actions
+
+---
+
+
+## 5. Data & Tools
 
 **Data**
 
@@ -49,40 +85,6 @@ This project simulates a realistic SaaS environment using synthetic data and dem
 - GitHub (versioning and documentation)
 
 SQL scripts are in [`sql/`](./sql). Dashboard screenshots are in [`screenshots/`](./screenshots).
-
----
-
-## 4. Key Metrics
-
-- **30-day Churn Rate:** ~25%
-- **Active Customer Base:** ~4K
-- **Monthly Recurring Revenue (MRR):** ~$126K
-- **Revenue Lost to Churn (Monthly):** ~$33K
-- **Estimated Annual Revenue at Risk:** ~$400K
-
----
-
-## 5. Dashboards
-
-### 5.1 Executive Summary (Page 1)
-
-[Link to live dashboard] https://lookerstudio.google.com/reporting/3680a8a5-9493-4e74-8a44-348ec08b26e8
-
-**Shows:**
-
-- Churn Rate (30d), Active Customers, MRR, Revenue Lost to Churn
-- Churn Rate by Plan & Churn Volume by Plan
-- Active vs Churned Customers over time (by signup quarter)
-- Key insights on where churn concentrates and financial impact
-
-### 5.2 Customer Journey & Retention (Page 2)
-
-**Shows:**
-
-- Cohort retention heatmap (Signup Cohort vs Months After Signup)
-- User Journey Funnel (Signed Up → Tried → Activated → Engaged → Churned)
-- Churn Rate by Login Frequency
-- Lifecycle insights and recommended actions
 
 ---
 
