@@ -1,6 +1,5 @@
 # SaaS Customer Churn & Retention – Analytics Case Study
 
-[🔗 View Dashboard (Looker Studio)] https://lookerstudio.google.com/reporting/3680a8a5-9493-4e74-8a44-348ec08b26e8
 
 ## Files in This Repo
 
